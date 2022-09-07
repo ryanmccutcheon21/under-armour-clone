@@ -11,7 +11,7 @@ const Hero = () => {
                 layout='responsive'
             />
 
-            <div className='flex flex-col items-center mt-5 md:absolute md:top-72 md:text-white md:left-14'>
+            <div className='flex flex-col items-center mt-20 md:mt-0 md:absolute md:top-64 md:text-white md:left-14'>
                 <h2>UA Freedom Collection</h2>
                 <p className='font-extrabold text-2xl md:text-3xl'>WORKS HARD. <br /> GIVES BACK.</p>
                 <p className='text-xs'>Every purchase supports those in service.</p>

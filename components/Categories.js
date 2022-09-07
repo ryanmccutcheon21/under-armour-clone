@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Categories = () => {
     return (
         <div className='flex flex-col items-center mt-10'>
-            <h2 className='font-bold mb-5 text-xl'>Put Our Newest Gear To Work</h2>
+            <h2 className='font-bold mt-20 text-xl'>Put Our Newest Gear To Work</h2>
             <div className='w-screen mt-10 px-5 md:flex'>
                 <a className='cursor-pointer w-full mx-4' href='#'>
                     <Image
@@ -13,7 +13,7 @@ const Categories = () => {
                         height='100vh'
                         layout='responsive'
                     />
-                    <p className='hover:underline'>Shop Women</p>
+                    <p className='hover:underline'>Shop Men</p>
                 </a>
                 <a className='cursor-pointer w-full mx-4' href='#'>
                     <Image
@@ -22,7 +22,7 @@ const Categories = () => {
                         height='100vh'
                         layout='responsive'
                     />
-                    <p className='hover:underline'>Shop Kids</p>
+                    <p className='hover:underline'>Shop Women</p>
                 </a>
                 <a className='cursor-pointer w-full mx-4' href='#'>
                     <Image
@@ -31,7 +31,7 @@ const Categories = () => {
                         height='100vh'
                         layout='responsive'
                     />
-                    <p className='hover:underline'>Shop Shoes</p>
+                    <p className='hover:underline'>Shop Kids</p>
                 </a>
                 <a className='cursor-pointer w-full mx-4' href='#'>
                     <Image
@@ -40,7 +40,7 @@ const Categories = () => {
                         height='100vh'
                         layout='responsive'
                     />
-                    <p className='hover:underline'>Shop Men</p>
+                    <p className='hover:underline'>Shop Shoes</p>
                 </a>
             </div>
 
