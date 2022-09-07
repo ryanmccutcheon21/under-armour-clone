@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: [
-      'www.underarmour.com'
+      'www.underarmour.com',
+      'underarmour.scene7.com',
     ]
   }
 }
