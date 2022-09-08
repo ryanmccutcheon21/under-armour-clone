@@ -10,6 +10,7 @@ const Extras = () => {
                     width='100vw'
                     height='100%'
                     layout='responsive'
+                    alt='extra'
                 />
                 <p className='hover:underline mt-5'>Shop Fan Gear</p>
             </div>
@@ -20,8 +21,9 @@ const Extras = () => {
                     width='100vw'
                     height='100%'
                     layout='responsive'
+                    alt='extra'
                 />
-                <p className='hover:underline mt-5'>Shop Kids' Fleece</p>
+                <p className='hover:underline mt-5'>Shop Kids&#39 Fleece</p>
             </div>
 
         </div>

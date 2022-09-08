@@ -12,6 +12,7 @@ const Categories = () => {
                         width='100vw'
                         height='100vh'
                         layout='responsive'
+                        alt='category'
                     />
                     <p className='hover:underline'>Shop Men</p>
                 </a>
@@ -21,6 +22,7 @@ const Categories = () => {
                         width='100vw'
                         height='100vh'
                         layout='responsive'
+                        alt='category'
                     />
                     <p className='hover:underline'>Shop Women</p>
                 </a>
@@ -30,6 +32,7 @@ const Categories = () => {
                         width='100vw'
                         height='100vh'
                         layout='responsive'
+                        alt='category'
                     />
                     <p className='hover:underline'>Shop Kids</p>
                 </a>
@@ -39,6 +42,7 @@ const Categories = () => {
                         width='100vw'
                         height='100vh'
                         layout='responsive'
+                        alt='category'
                     />
                     <p className='hover:underline'>Shop Shoes</p>
                 </a>

@@ -46,7 +46,7 @@ const Carousel = () => {
                 if (idx < 4) {
                     return (
                         <div className='mx-3 w-[200px] h-[200px]' key={idx}>
-                            <Image src={src} width='200px' height='200px' />
+                            <Image src={src} alt='item' width='200px' height='200px' />
                             <p>{description}</p>
                             <p className='text-gray-600'>{price}</p>
                         </div>
