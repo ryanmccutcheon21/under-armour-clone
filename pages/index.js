@@ -6,6 +6,7 @@ import Categories from '../components/Categories'
 import Meridian from '../components/Meridian'
 import Carousel from '../components/Carousel'
 import UAHOVR from '../components/UAHOVR'
+import Extras from '../components/Extras'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Meridian />
       <Carousel />
       <UAHOVR />
+      <Extras />
     </div>
   )
 }
