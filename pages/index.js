@@ -7,6 +7,7 @@ import Meridian from '../components/Meridian'
 import Carousel from '../components/Carousel'
 import UAHOVR from '../components/UAHOVR'
 import Extras from '../components/Extras'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Carousel />
       <UAHOVR />
       <Extras />
+      <Footer />
     </div>
   )
 }
