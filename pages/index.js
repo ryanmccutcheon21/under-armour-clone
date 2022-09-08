@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Categories from '../components/Categories'
 import Meridian from '../components/Meridian'
 import Carousel from '../components/Carousel'
+import UAHOVR from '../components/UAHOVR'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Categories />
       <Meridian />
       <Carousel />
+      <UAHOVR />
     </div>
   )
 }

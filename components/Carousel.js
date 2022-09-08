@@ -41,7 +41,7 @@ const moreItems = [
 const Carousel = () => {
 
     return (
-        <div className='flex flex-grow mt-20 mb-96'>
+        <div className='flex flex-grow mt-20 mb-40'>
             {carouselData.map(({ src, description, price }, idx) => {
                 if (idx < 4) {
                     return (
