@@ -37,7 +37,7 @@ const Footer = () => {
                 <li className='border-b border-b-gray-600 py-3'>UA Social</li>
             </ul>
             <div className='flex flex-col text-center mt-10'>
-                <p>&copy; 2022 Under Armour, Inc.</p>
+                <p>&copy; 2022 Under Armour Clone by Ryan McCutcheon</p>
                 <p>Privacy Policy / Terms of Use / Cookie Preferences</p>
             </div>
 

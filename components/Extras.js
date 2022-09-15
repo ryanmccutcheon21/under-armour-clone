@@ -23,7 +23,7 @@ const Extras = () => {
                     layout='responsive'
                     alt='extra'
                 />
-                <p className='hover:underline mt-5'>Shop Kids&#39 Fleece</p>
+                <p className='hover:underline mt-5'>Shop Kids&#39; Fleece</p>
             </div>
 
         </div>
