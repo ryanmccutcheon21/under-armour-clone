@@ -1,19 +1,9 @@
-export const clothesOptions = {
+export const options = {
     method: 'GET',
-    params: {
-        store: 'US',
-        offset: '0',
-        categoryId: '4209',
-        limit: '48',
-        country: 'US',
-        sort: 'freshness',
-        currency: 'USD',
-        sizeSchema: 'US',
-        lang: 'en-US'
-    },
+    params: { limit: '24', offset: '1', dimensionValueID: 'AgeAppropriate:Teens' },
     headers: {
-        'X-RapidAPI-Key': process.env.REACT_APP_ASOS_KEY,
-        'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+        'X-RapidAPI-Key': '3ebcd836a6mshb11d1b6b62d7cfdp1239d5jsna8b91851f777',
+        'X-RapidAPI-Host': 'kohls.p.rapidapi.com'
     }
 };
 

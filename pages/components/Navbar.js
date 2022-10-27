@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 // import underArmour from '../../assets/under-armour.svg'
 // import Image from 'next/image'
 import Link from 'next/link'
-import { clothesOptions, fetchData } from '../../utils/fetchData'
+import { options, fetchData } from '../../utils/fetchData'
 
 const navigation = [
     { name: 'New', href: 'new', current: true },
@@ -26,7 +26,7 @@ export default function Navbar() {
 
     const handleSearch = async () => {
         if (search) {
-            const clothesData = await fetchData('https://asos2.p.rapidapi.com/products/v2/list', clothesOptions)
+            const clothesData = await fetchData('https://kohls.p.rapidapi.com/products/list', options)
             console.log(clothesData)
         }
     }
@@ -145,7 +145,7 @@ export default function Navbar() {
                                 <form className='flex lg:border-b-2 lg:border-b-gray-600 mr-2'
                                     onSubmit={handleSearch} >
                                     <input
-                                        type='search'
+                                        type='text'
                                         placeholder='Search UA'
                                         className='hidden lg:inline bg-black text-white border border-none focus:outline-none'
                                         onChange={e => { setSearch(e.target.value.toLowerCase()) }}
@@ -155,7 +155,7 @@ export default function Navbar() {
                                         type="submit"
                                         className="rounded-full p-1 text-gray-400 hover:text-white"
                                     >
-                                        <span className="sr-only">View notifications</span>
+                                        {/* <span className="sr-only">View notifications</span> */}
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                         </svg>
@@ -167,6 +167,7 @@ export default function Navbar() {
                                 <button
                                     type="button"
                                     className="rounded-full p-1 text-gray-400 hover:text-white hidden lg:block"
+                                    onClick={() => handleSearch}
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
@@ -192,7 +193,7 @@ export default function Navbar() {
 
                     {/* Hidden Hamburger Dropdown */}
                     <Disclosure.Panel className="lg:hidden">
-                        <div className="space-y-1 px-2 pt-2 pb-3">
+                        <div className="space-y-1 px-2 pt-2 pb-3 absolute bg-black w-[100vw]">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
