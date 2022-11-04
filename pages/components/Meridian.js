@@ -14,8 +14,16 @@ const Meridian = () => {
                 </div>
 
                 <div className='flex flex-col my-5 w-[90%]'>
-                    <button className='bg-black text-white mb-2 rounded p-1 hover:bg-gray-600'>Shop Women</button>
-                    <button className='bg-black text-white my-2 rounded p-1 hover:bg-gray-600'>Shop Men</button>
+                    <button className='bg-black text-white mb-2 rounded p-1 hover:bg-gray-600'>
+                        <a href='women'>
+                            Shop Women
+                        </a>
+                    </button>
+                    <button className='bg-black text-white my-2 rounded p-1 hover:bg-gray-600'>
+                        <a href='men'>
+                            Shop Men
+                        </a>
+                    </button>
                 </div>
             </div>
 
