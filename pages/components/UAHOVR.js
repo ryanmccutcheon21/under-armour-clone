@@ -11,6 +11,7 @@ const UAHOVR = () => {
                         width='100vw'
                         height='75px'
                         layout='responsive'
+                        alt='People running with UAHOVR shoes'
                     />
 
                 </div>
@@ -20,6 +21,7 @@ const UAHOVR = () => {
                         width='100vw'
                         height='136px'
                         layout='responsive'
+                        alt='Woman running with UAHOVR shoes'
                     />
                 </div>
             </div>

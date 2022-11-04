@@ -59,7 +59,7 @@ const Curry = () => {
         <div>
             <Navbar />
             <section className='bg-red-500 h-[75vh] flex flex-col justify-center bg-Curry bg-cover'>
-                <p className='mx-auto text-white'>'Iron Sharpens Iron'</p>
+                <p className='mx-auto text-white'>&sbquo;Iron Sharpens Iron&sbquo;</p>
                 <h2 className='mx-auto mb-5 font-extrabold text-white text-4xl text-center'>Curry <br /> Flow 10</h2>
                 <button className='mx-auto py-2 px-10 bg-white rounded hover:text-gray-500' type='button'>Shop Now</button>
             </section>
@@ -69,15 +69,15 @@ const Curry = () => {
                 </button>
                 <ul className='flex'>
                     {!showExtended && products.map(product => (
-                        <li className='mx-10'>
-                            <Image width='100%' height='100%' src={product.image} />
+                        <li className='mx-10' key={product.image}>
+                            <Image width='100%' height='100%' src={product.image} alt='Curry product' />
                             <p>{product.name}</p>
                             <p className='text-gray-500'>{product.price}</p>
                         </li>
                     ))}
                     {showExtended && extendedProducts.map(product => (
-                        <li className='mx-10'>
-                            <Image width='100%' height='100%' src={product.image} />
+                        <li className='mx-10' key={product.image}>
+                            <Image width='100%' height='100%' src={product.image} alt='Curry product' />
                             <p>{product.name}</p>
                             <p className='text-gray-500'>{product.price}</p>
                         </li>
@@ -100,7 +100,7 @@ const Curry = () => {
             <section className='flex justify-center text-center max-w-xs mx-auto h-[50vh] mt-20'>
                 <div>
                     <p className='font-extrabold text-3xl'>THE GREATEST 3PT SHOOTER</p>
-                    <p className='text-sm'>The real work is what people don't see. Only Stehpen Curry knows the hours it took to get to 2,974.</p>
+                    <p className='text-sm'>The real work is what people don&sbquo;t see. Only Stehpen Curry knows the hours it took to get to 2,974.</p>
                     <button type='button' className='text-white bg-black px-10 py-2 mt-3 rounded hover:bg-gray-500'>Shop Curry Brand</button>
                 </div>
             </section>
@@ -110,7 +110,7 @@ const Curry = () => {
             <section className='flex justify-center text-center max-w-xs mx-auto h-[50vh] mt-20'>
                 <div>
                     <p className='font-extrabold text-3xl'>CHANGE THE GAME FOR GOOD</p>
-                    <p className='text-sm'>Our mission goes beyond the court. It's about creating opportunity, access, and equality for youth sports in neighborhoods around the world.</p>
+                    <p className='text-sm'>Our mission goes beyond the court. It&sbquo;s about creating opportunity, access, and equality for youth sports in neighborhoods around the world.</p>
                 </div>
             </section>
             <section className='h-[50vh] flex mb-20'>
@@ -120,7 +120,7 @@ const Curry = () => {
                     <p className='font-extrabold text-2xl mb-5'>Sign up for updates.</p>
                     <input type='email' className='border pl-2' placeholder='Email' />
                     <button className='bg-black text-white rounded px-5 py-1 mt-2 hover:bg-gray-800' type='submit'>Sign Up</button>
-                    <p className='text-xs mt-5 text-gray-500'>By providing your e-mail, you agree to Under Armour Clone's <span className='underline hover:text-black hover:cursor-pointer'>Privacy Policy</span> and <span className='underline hover:text-black hover:cursor-pointer'>Terms &amp; Conditions</span>. You may unsubscribe later.</p>
+                    <p className='text-xs mt-5 text-gray-500'>By providing your e-mail, you agree to Under Armour Clone&sbquo;s <span className='underline hover:text-black hover:cursor-pointer'>Privacy Policy</span> and <span className='underline hover:text-black hover:cursor-pointer'>Terms &amp; Conditions</span>. You may unsubscribe later.</p>
                 </form>
             </section>
             <Footer />
