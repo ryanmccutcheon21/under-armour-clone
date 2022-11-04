@@ -123,7 +123,7 @@ export default function Navbar() {
                                 <div className="hidden lg:ml-6 lg:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <Link href={item.href}>
+                                            <Link href={item.href} key={item.href}>
                                                 <a
                                                     key={item.name}
                                                     className={classNames(

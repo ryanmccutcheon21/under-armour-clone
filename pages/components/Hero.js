@@ -9,6 +9,7 @@ const Hero = () => {
                 width='100vw'
                 height='50vh'
                 layout='responsive'
+                alt='Hero Banner'
             />
 
             <div className='flex flex-col items-center mt-20 md:mt-0 md:absolute md:top-64 md:text-white md:left-14'>

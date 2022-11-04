@@ -26,6 +26,7 @@ const Meridian = () => {
                     height='100%'
                     layout='responsive'
                     src={'https://www.underarmour.com/_next/image/?url=https%3A%2F%2Funderarmour.scene7.com%2Fis%2Fimage%2FUnderarmour%2F%2FFW22_TRN_Cogender_Meridian_Site_2_1_COG_AMR%3Fqlt%3D75%26fmt%3Djpg%26scl%3D1%26&w=2048&q=75'}
+                    alt='Under Armour Meridians'
                 />
             </div>
 

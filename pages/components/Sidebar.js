@@ -142,7 +142,7 @@ const Sidebar = ({ label, category }) => {
                     <button type='button' className='text-[gray] hover:text-black underline'>Clear All</button>
                 </div>
                 {dropdowns.map((item) => (
-                    <div>
+                    <div key={item.label}>
                         <div className='py-5 flex justify-between border-b-2'>
                             <p>{item.label}</p>
                             <button type='button' onClick={handleClick}>
@@ -153,9 +153,9 @@ const Sidebar = ({ label, category }) => {
                         {showDropdown && (
                             <form className='flex flex-col'>
                                 {item.options.map(opt => (
-                                    <div className='flex justify-center'>
+                                    <div className='flex justify-center' key={opt}>
                                         <input type='checkbox' id={opt} className='mr-2' />
-                                        <label for={opt}>{opt}</label>
+                                        <label htmlFor={opt}>{opt}</label>
                                     </div>
                                 ))}
                             </form>
