@@ -1,10 +1,8 @@
 import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-// import underArmour from '../../assets/under-armour.svg'
-// import Image from 'next/image'
 import Link from 'next/link'
-import { options, fetchData } from '../../utils/fetchData'
+// import { options, fetchData } from '../../utils/fetchData'
 
 const navigation = [
     { name: 'New', href: 'new', current: true },
@@ -22,14 +20,14 @@ function classNames(...classes) {
 
 export default function Navbar() {
 
-    const [search, setSearch] = useState('')
+    // const [search, setSearch] = useState('')
 
-    const handleSearch = async () => {
-        if (search) {
-            const clothesData = await fetchData('https://kohls.p.rapidapi.com/products/list', options)
-            console.log(clothesData)
-        }
-    }
+    // const handleSearch = async () => {
+    // if (search) {
+    // const clothesData = await fetchData('https://kohls.p.rapidapi.com/products/list', options)
+    // console.log(clothesData)
+    // }
+    // }
 
     return (
         <Disclosure as="nav" className="bg-black sticky top-0 z-50">
@@ -113,6 +111,7 @@ export default function Navbar() {
                                 </Transition>
                             </Menu>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
+
                                 {/* Under Armour Logo */}
                                 <Link href='/'>
                                     <div className="flex flex-shrink-0 lg:absolute lg:left-0 justify-center mr-20 sm:mr-0 hover:cursor-pointer">
@@ -120,6 +119,7 @@ export default function Navbar() {
                                     </div>
                                 </Link>
 
+                                {/* Nav Page Links */}
                                 <div className="hidden lg:ml-6 lg:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
@@ -143,19 +143,19 @@ export default function Navbar() {
 
                                 {/* Search Button */}
                                 <form className='flex lg:border-b-2 lg:border-b-gray-600 mr-2'
-                                    onSubmit={handleSearch} >
+                                    onSubmit={''} >
                                     <input
                                         type='text'
                                         placeholder='Search UA'
                                         className='hidden lg:inline bg-black text-white border border-none focus:outline-none'
-                                        onChange={e => { setSearch(e.target.value.toLowerCase()) }}
-                                        value={search}
+                                    // onChange={e => { setSearch(e.target.value.toLowerCase()) }}
+                                    // value={search}
                                     />
                                     <button
                                         type="submit"
                                         className="rounded-full p-1 text-gray-400 hover:text-white"
                                     >
-                                        {/* <span className="sr-only">View notifications</span> */}
+                                        <span className="sr-only">View notifications</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                         </svg>
