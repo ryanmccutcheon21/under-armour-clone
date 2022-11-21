@@ -4,12 +4,11 @@ import { useState } from 'react'
 
 const Products = ({ products }) => {
     const [num, setNum] = useState(15)
-    const productsArr = [...products]
 
     return (
         <div className='flex flex-col ml-[30%]'>
             <ul className='flex flex-wrap my-5'>
-                {productsArr.slice(0, num).map(product => (
+                {products?.slice(0, num).map(product => (
                     <li key={product.image.url} className='m-2 border border-gray-500 rounded hover:cursor-pointer hover:shadow-xl shadow-gray-600 hover:scale-105'>
                         <Image alt='Product Image' width={product.image.width} height={product.image.height} src={product.image.url} />
                     </li>
