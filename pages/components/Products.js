@@ -3,24 +3,27 @@ import React from 'react'
 import { useState } from 'react'
 
 const Products = ({ products }) => {
-    const [slice, setSlice] = useState(15)
+    const [num, setNum] = useState(15)
+
     return (
         <div className='flex flex-col ml-[30%]'>
             <ul className='flex flex-wrap my-5'>
-                {products.slice(0, slice).map(product => (
+                {products.slice(0, num).map(product => (
                     <li key={product.image.url} className='m-2 border border-gray-500 rounded hover:cursor-pointer hover:shadow-xl shadow-gray-600 hover:scale-105'>
                         <Image alt='Product Image' width={product.image.width} height={product.image.height} src={product.image.url} />
                     </li>
                 ))}
             </ul>
-            {slice > 15 && (
+            {num > 15 && (
                 <div className='text-white text-center mb-5'>
-                    <button className='px-2 py-1 rounded bg-red-800' onClick={() => setSlice(15)}>View Less</button>
+                    <button className='px-2 py-1 rounded bg-red-800' onClick={() => setNum(15)}>View Less</button>
                 </div>
             )}
-            <div className='text-white text-center mb-5'>
-                <button className='px-2 py-1 rounded bg-red-800' onClick={() => setSlice(prev => prev + 3)}>View More</button>
-            </div>
+            {num < 24 && (
+                <div className='text-white text-center mb-5'>
+                    <button className='px-2 py-1 rounded bg-red-800' onClick={() => setNum(prev => prev + 3)}>View More</button>
+                </div>
+            )}
         </div>
     )
 }

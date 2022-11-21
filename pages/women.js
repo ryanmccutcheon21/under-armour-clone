@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import Products from './components/Products'
 
 import { fetchData, mediaUrl, options } from '../utils/fetchData'
-import Products from './components/Products'
 
 export const getStaticProps = async () => {
     const { payload: { products } } = await fetchData(`${mediaUrl}`, options)
@@ -18,6 +18,7 @@ const Women = ({ products }) => {
             <Navbar />
             <Sidebar label='Women' category="Women's" />
             <Products products={products} />
+
         </div>
     )
 }
