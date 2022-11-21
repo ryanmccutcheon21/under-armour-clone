@@ -9,7 +9,7 @@ const Products = ({ products }) => {
             <ul className='flex flex-wrap my-5'>
                 {products.slice(0, slice).map(product => (
                     <li key={product.image.url} className='m-2 border border-gray-500 rounded hover:cursor-pointer hover:shadow-xl shadow-gray-600 hover:scale-105'>
-                        <Image width={product.image.width} height={product.image.height} src={product.image.url} />
+                        <Image alt='Product Image' width={product.image.width} height={product.image.height} src={product.image.url} />
                     </li>
                 ))}
             </ul>
@@ -19,7 +19,7 @@ const Products = ({ products }) => {
                 </div>
             )}
             <div className='text-white text-center mb-5'>
-                <button className='px-2 py-1 rounded bg-red-800' onClick={() => setSlice(slice + 3)}>View More</button>
+                <button className='px-2 py-1 rounded bg-red-800' onClick={() => setSlice(prev => prev + 3)}>View More</button>
             </div>
         </div>
     )
