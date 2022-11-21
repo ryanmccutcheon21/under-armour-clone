@@ -2,11 +2,22 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 
-const Shoes = () => {
+import { fetchData, mediaUrl, options } from '../utils/fetchData'
+import Products from './components/Products'
+
+export const getStaticProps = async () => {
+    const { payload: { products } } = await fetchData(`${mediaUrl}`, options)
+    return {
+        props: { products }
+    }
+}
+
+const Shoes = ({ products }) => {
     return (
         <div>
             <Navbar />
             <Sidebar label='Shoes' category="Shoes" />
+            <Products products={products} />
         </div>
     )
 }

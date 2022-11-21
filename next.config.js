@@ -6,6 +6,7 @@ const nextConfig = {
     domains: [
       'www.underarmour.com',
       'underarmour.scene7.com',
+      'media.kohlsimg.com'
     ]
   }
 }

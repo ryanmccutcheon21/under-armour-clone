@@ -118,7 +118,7 @@ const Sidebar = ({ label, category }) => {
     }
 
     return (
-        <div className='inline-block border border-red-800'>
+        <div className='absolute border border-red-800'>
             <Link href='/men'>
                 <p className='m-5 text-lg hover:cursor-pointer hover:underline'>{category}</p>
             </Link>
