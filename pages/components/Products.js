@@ -6,7 +6,7 @@ const Products = ({ products }) => {
     const [num, setNum] = useState(15)
 
     return (
-        <div className='flex flex-col ml-[30%]'>
+        <div className='lg:flex lg:flex-col lg:ml-[30%] block'>
             <ul className='flex flex-wrap my-5'>
                 {products?.slice(0, num).map(product => (
                     <li key={product.image.url} className='m-2 border border-gray-500 rounded hover:cursor-pointer hover:shadow-xl shadow-gray-600 hover:scale-105'>
