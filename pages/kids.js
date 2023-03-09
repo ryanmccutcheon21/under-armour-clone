@@ -1,25 +1,9 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import { Kids } from "./hocs/withCategory"
 
-import { fetchData, mediaUrl, options } from '../utils/fetchData'
-import Products from './components/Products'
-
-export const getStaticProps = async () => {
-    const { payload: { products } } = await fetchData(`${mediaUrl}`, options)
-    return {
-        props: { products }
-    }
-}
-
-const Kids = ({ products }) => {
+const Kid = () => {
     return (
-        <div>
-            <Navbar />
-            <Sidebar label='Kids' category="Kids'" />
-            <Products products={products} />
-        </div>
+        <><Kids /></>
     )
 }
 
-export default Kids
+export default Kid
